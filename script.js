@@ -8,15 +8,15 @@ function calcular() {
     let delta = (b ** 2) - (4 * a * c); //Δ = b² – 4ac
     let x1 = (-b + (delta ** 0.5)) / (2 * a); // x' = (-b + √Δ) / (2a)
     let x2 = (-b - (delta ** 0.5)) / (2 * a); // x" = (-b - √Δ) / (2a)
-    res.innerHTML = `<p>O valor de \u{0394} é ${delta}</p>`;
+    res.innerHTML = `<p>O valor de \u{0394} é <strong>${delta}</strong></p>`;
 
     if (delta == 0) {
         res.innerHTML += ' '
     } else if (delta < 0) {
-        res.innerHTML += `</br>O valor de \u{0394} é negativo.</br>A equação não terá valores reais.`
+        res.innerHTML += `</br><p>O valor de \u{0394} é <strong>negativo</strong>.</br>A equação não terá valores reais.</p>`
     } else {
-        res.innerHTML += `</br><p>O valor de x' é ${x1}</p>`;
-        res.innerHTML += `</br><p>O valor de x" é ${x2}</p>`;
+        res.innerHTML += `</br><p>O valor de x' é <strong>${x1}</strong></p>`;
+        res.innerHTML += `</br><p>O valor de x" é <strong>${x2}</strong></p>`;
     }
 }
 
