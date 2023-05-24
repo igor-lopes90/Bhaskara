@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(241, 240, 240);
+    border-radius: 13px;
+    box-shadow: -4px 5px 8px rgba(70, 70, 70, 0.555);
+}
+
+h1 {
+    font-size: 1.6em;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.valores > p {
+    padding-left: 28px;
+    padding-bottom: 15px;
+}
+
+p > input {
+    height: 20px;
+    width: 100px;
+    padding-left: 5px;
+}
+
+.botao {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calcular {
+    height: 23px;
+    width: 80px;
+    background-color: rgb(250, 253, 69);
+    /*margin: 0 0 10px 20px;*/
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.recalc {
+    height: 23px;
+    width: 110px;
+    background-color: rgb(250, 253, 69);
+    /*margin: 10px 20px 0 0;*/
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.res {
+    text-align: center;
+    margin: 25px 8px 0 8px;
+}
